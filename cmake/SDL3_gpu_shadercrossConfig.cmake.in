@@ -12,13 +12,13 @@ set(SDL3_gpu_SHADERCROSS_REQUIRED_VERSION  @SDL_REQUIRED_VERSION@)
 
 set(SDL3_gpu_shadercross_SDL3_gpu_shadercross-shared_FOUND FALSE)
 if(EXISTS "${CMAKE_CURRENT_LIST_DIR}/SDL3_gpu_shadercross-shared-targets.cmake")
-    include("${CMAKE_CURRENT_LIST_DIR}/SDL3_gpu_shadercross-shared.cmake")
+    include("${CMAKE_CURRENT_LIST_DIR}/SDL3_gpu_shadercross-shared-targets.cmake")
     set(SDL3_gpu_shadercross_SDL3_gpu_shadercross-shared_FOUND TRUE)
 endif()
 
 set(SDL3_gpu_shadercross_SDL3_gpu_shadercross-static FALSE)
 if(EXISTS "${CMAKE_CURRENT_LIST_DIR}/SDL3_gpu_shadercross-static-targets.cmake")
-    include("${CMAKE_CURRENT_LIST_DIR}/SDL3_gpu_shadercross-static.cmake")
+    include("${CMAKE_CURRENT_LIST_DIR}/SDL3_gpu_shadercross-static-targets.cmake")
     set(SDL3_gpu_shadercross_SDL3_gpu_shadercross-static_FOUND TRUE)
 endif()
 
